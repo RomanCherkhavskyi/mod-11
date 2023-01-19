@@ -17,13 +17,11 @@ public class Task4 {
 //        Stream.iterate(xseed, xseed -> generator(xseed))
 //                .limit(60)
 //                .forEach(x -> System.out.println(x));
-
     }
 
     public  static Stream<Long> getRandom(long a, long c, long m) {
         return Stream.iterate(0L, x -> (a * x + c) % m);
     }
-
 
     //old code
 //    public static long generator(long value){

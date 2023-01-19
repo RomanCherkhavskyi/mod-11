@@ -7,9 +7,7 @@ public class Task2 {
 
     public static void main(String[] args) {
         List<String> list = List.of(new String[]{"Ivan", "Yuri", "Roman", "Nazar", "Stepan", "Max", "Igor"});
-
         System.out.println("sortedList(list) = " + sortedList(list));
-
 
         //old code
 //        Iterator<String> iterator;

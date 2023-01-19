@@ -8,7 +8,6 @@ public class Task3 {
     public static void main(String[] args) {
 
         String[] array = {"1, 2, 0", "4, 5"};
-
         System.out.println("sortNumbers(array) = " + sortNumbers(array));
 
         //old code
@@ -28,7 +27,6 @@ public class Task3 {
                 .sorted()                                       //sorted
                 .collect(Collectors.joining(", "));     //and create stream with delimiter ", "
     }
-
 
     //old code
 //    private static String[] rebuildArray(String[] array) {
@@ -54,7 +52,6 @@ public class Task3 {
 ////        System.out.println("rebuildered array = " + Arrays.toString(result));
 //        return result;
 //    }
-
 }
 
 /*

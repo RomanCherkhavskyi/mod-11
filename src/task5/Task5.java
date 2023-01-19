@@ -30,9 +30,6 @@ public class Task5 {
         return builder.build();                             //create new concat stream
     }
 
-
-
-
     //old code
 //    public static <T> Stream<T> zip(Stream<T> first, Stream<T> second){
 //
@@ -59,6 +56,26 @@ public class Task5 {
 /*
 Напишіть метод public static <T> Stream<T> zip(Stream<T> first, Stream<T> second)
 який "перемішує" елементи зі стрімів first та second, зупиняючись тоді, коли у одного зі стрімів закінчаться елементи.
+ */
+
+/*
+і загальне рішення в мене таке
+
+public static <T> Stream<T> zip(Stream<T> first, Stream<T> second){
+    Iterator<T> firstIter = first.iterator();
+    Iterator<T> secondIter = second.iterator();
+    Stream.Builder<T> builder = Stream.builder();
+ while (firstIter.hasNext() && secondIter.hasNext()) {
+        builder.add(firstIter.next());
+        builder.add(secondIter.next());}
+ return builder.build();
+}
+
+і щодо 5 завдання все вірно але коли в циклі
+while (firstIter.hasNext() && secondIter.hasNext()) {
+            builder.add(firstIter.next());
+            builder.add(secondIter.next());}
+прописана умова то вже if не потрібно
  */
 
 

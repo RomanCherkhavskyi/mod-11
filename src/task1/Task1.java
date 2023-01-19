@@ -1,6 +1,5 @@
 package task1;
 
-
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -8,7 +7,6 @@ public class Task1 {
 
     public static void main(String[] args) {
         List<String> list = List.of(new String[]{"Ivan", "Yuri", "Roman", "Nazar", "Stepan", "Max", "Igor"});
-
         System.out.println("retOddNames(list) = " + retOddNames(list));
     }
 
@@ -36,7 +34,6 @@ public class Task1 {
 Метод приймає на вхід список імен.
 Необхідно повернути рядок вигляду 1. Ivan, 3. Peter... лише з тими іменами, що стоять під непарним індексом (1, 3 тощо)
  */
-
 
 /*
 public String filterNames1(List<String> names){
